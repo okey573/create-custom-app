@@ -1,0 +1,26 @@
+{
+  "name": "create-custom-app",
+  "version": "0.0.0",
+  "description": "创建项目模板",
+  "bin": {
+    "create-custom-app": "outfile.cjs"
+  },
+  "files": [
+    "outfile.cjs"
+  ],
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "scripts": {
+    "build": "esbuild index.cjs --bundle --platform=node --outfile=outfile.cjs"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.2.1",
+    "esbuild": "^0.16.4",
+    "gradient-string": "^2.0.2",
+    "kolorist": "^1.6.0",
+    "minimist": "^1.2.7",
+    "prompts": "^2.4.2"
+  }
+}
